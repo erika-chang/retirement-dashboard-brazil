@@ -1,4 +1,4 @@
-# 📊 Job Security Dashboard: Retirement Patterns in Goiás, Brazil
+# 📊 Job Security Dashboard: Retirement Patterns
 
 This project is a data science exploration into **retirement patterns** among public employees in Brazil. The goal is to analyze trends and develop an interactive dashboard to visualize insights around job stability, aging workforce, and long-term employment.
 
