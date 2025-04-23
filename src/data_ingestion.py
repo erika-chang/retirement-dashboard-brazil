@@ -2,9 +2,9 @@ import os
 import requests
 from datetime import datetime
 
-DATA_FILES = [("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU.csv", "aposentadorias_RJU.csv"),
-              ("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU_Fundamenta%C3%A7%C3%B5es.csv", "aposentadorias_fund.csv"),
-              ("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU_Classes.csv", "aposentadorias_classes.csv")]
+DATA_FILES = [("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU.csv", "aposentados.csv"),
+              ("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU_Fundamenta%C3%A7%C3%B5es.csv", "fundamentacao.csv"),
+              ("https://www.bcb.gov.br/conteudo/depes/ArquivosAposentados/Aposentadorias_BCB_RJU_Classes.csv", "classes.csv")]
 SAVE_DIR = "data/raw"
 
 def download_data(url, save_path):
