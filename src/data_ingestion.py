@@ -17,7 +17,7 @@ def download_data(url, save_path):
     else:
         print(f'Failed to download data. Status code: {response.status_code}')
 
-def is_data_fresh(file_path, days_valid=30):
+def check_date_file(file_path, days_valid=30): # Check if the file is less than 30 days old
     if os.path.exists(file_path):
         file_mod_time = os.path.getmtime(file_path)
         file_age = (datetime.now().timestamp() - file_mod_time) / (24 * 3600)
@@ -30,7 +30,7 @@ def main():
 
 for url, filename in DATA_FILES:
         save_path = os.path.join(SAVE_DIR, filename)
-        if is_data_fresh(save_path):
+        if check_date_file(save_path):
             print(f"{filename} is already fresh. Skipping.")
             print(f"Last modified: {datetime.fromtimestamp(os.path.getmtime(save_path))}")
         else:
