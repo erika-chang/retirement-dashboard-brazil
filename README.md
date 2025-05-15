@@ -23,7 +23,7 @@ This project is a data science exploration into **retirement patterns** among pu
 
 ## 🧱 Project Structure
 
-bash
+```
 job-security-dashboard-brazil/
 │
 ├── data/                      # Raw and processed datasets
@@ -34,6 +34,7 @@ job-security-dashboard-brazil/
 ├── README.md                  # You’re here!
 ├── requirements.txt           # Python dependencies
 └── .gitignore
+```
 
 ## 🧰 Tools & Libraries
 - Python 3.10.6
